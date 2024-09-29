@@ -1,0 +1,207 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(BDD1C5, 118AB2, 073B4C) ;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+    
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-bar ul li {
+    margin: 0 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color:BLACK;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff7f00; 
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.heading h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.heading h2 {
+    color: #ff7f00;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff7f00;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: rgb(238, 51, 113);
+    color: #c8A8E9;
+}
+
+.container1, .container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.container1 .left, .container1 .right, .container2 .left, .container2 .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.container1 img, .container2 img {
+    width: 100%;
+    height: 60VH;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1, .container2 {
+        flex-direction: column;
+    }
+
+    .container1 .left, .container1 .right, .container2 .left, .container2 .right {
+        padding: 10px;
+    }
+}
+
+
+
+
+
+
+.header {
+    background: linear-gradient(135deg, #ff7f00, #ffcc00);  
+    padding: 50px;              
+    text-align: center;         
+    border-radius: 15px;       
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+    margin: 30px auto;          
+    max-width: 1500px;           
+    transition: transform 0.3s ease;  
+}
+
+.header:hover {
+    transform: translateY(-5px); 
+}
+
+.header div {
+    font-size: 28px;            
+    font-weight: bold;        
+    color: white;             
+    margin-bottom: 25px;        
+    letter-spacing: 1px;        
+}
+
+.header form {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.header input[type="email"] {
+    padding: 15px;              
+    font-size: 18px;            
+    border: none;              
+    border-radius: 8px 0 0 8px; 
+    width: 70%;                
+    max-width: 350px;      
+    margin-right: -5px;         
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+.header input[type="email"]:focus {
+    outline: none;              
+    box-shadow: 0 0 10px rgba(255, 127, 0, 0.8); 
+    transform: scale(1.02);     
+}
+
+.header button {
+    padding: 15px 30px;         
+    background-color: #fff;    
+    color: #ff7f00;            
+    font-size: 18px;            
+    font-weight: bold;        
+    border: none;               
+    border-radius: 0 8px 8px 0; 
+    cursor: pointer;            
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.header button:hover {
+    background-color: #ffcc00;  
+    color: #333;               
+    transform: scale(1.05);    
+}
+
+@media screen and (max-width: 768px) {
+    .header form {
+        flex-direction: column;  
+    }
+
+    .header input[type="email"] {
+        width: 100%;             
+        margin-right: 0;         
+        margin-bottom: 10px;     
+    }
+
+    .header button {
+        width: 100%;             
+        border-radius: 8px;      
+    }
+}
